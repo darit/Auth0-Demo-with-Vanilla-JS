@@ -1,0 +1,36 @@
+<!-- This HTML file sets up a simple page for the Auth0 login demo.
+     It includes buttons for Login and Logout and displays basic user info once logged in. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Auth0 Demo with Vanilla JS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    #profile {
+      margin-top: 20px;
+      font-size: 1.2em;
+    }
+    button {
+      margin: 5px;
+      padding: 8px 16px;
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Auth0 Demo with Vanilla JS</h1>
+  <button id="btn-login">Login</button>
+  <button id="btn-logout" style="display: none;">Logout</button>
+  <div id="profile"></div>
+  <img id="profile-picture" style="display: none; max-width: 50px; border-radius: 50%;" alt="Profile Picture"/>
+
+  <!-- Include Auth0 SPA JS SDK -->
+  <script src="https://cdn.auth0.com/js/auth0/9.18/auth0.min.js"></script>
+  <!-- Include our custom script -->
+  <script src="script.js?t=1"></script>
+</body>
+</html>
