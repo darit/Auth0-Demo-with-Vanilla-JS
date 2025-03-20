@@ -69,7 +69,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Session Management
-    let userProfile = null;
     let tokenRenewalTimeout;
     let isInitialLoad = true;
 
